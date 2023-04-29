@@ -18,19 +18,21 @@
       <td>{{ item.contact }}</td>
       <td>{{ item.email }}</td>
       <td>
-        <button
+    <!--     <button
           mat-raised-button
           disabled
           [disabled]="true"
           (click)="OnEdit(item)"
         >
           Disabled
-        </button>
+        </button> -->
+        <mat-icon aria-hidden="false" class="icons" aria-label="Example edit icon" fontIcon="edit" (click)="OnEdit(item)"></mat-icon>
       </td>
       <td>
-        <button mat-flat-button color="warn" (click)="OnDelete(item.id,item.fname)">
+     <!--    <button mat-flat-button color="warn" (click)="OnDelete(item.id,item.fname)">
           Delete
-        </button>
+        </button> -->
+        <mat-icon aria-hidden="false" class="icons" aria-label="Example delete icon" fontIcon="delete"  (click)="OnDelete(item.id,item.fname)"></mat-icon>
       </td>
     </tr>
   </tbody>
